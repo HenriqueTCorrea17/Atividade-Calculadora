@@ -38,14 +38,9 @@ export default function App() {
 
         <Text style={styles.label}>Informe os números:</Text>
 
-        <TextInput
-            style={styles.input}
-            placeholder="Digite o primeiro número"
-            keyboardType="numeric"
-            onChangeText={setNumero1}
-        />
+        <TextInput style={styles.input} placeholder="Digite o primeiro número" keyboardType="numeric" onChangeText={setNumero1} />
 
-        <TextInput style={styles.input} placeholder="Digite o segundo número" onChangeText={setNumero2}/>
+        <TextInput style={styles.input} placeholder="Digite o segundo número" keyboardType="numeric" onChangeText={setNumero2} />
 
         <View style={styles.botoesPai}>
           <Button title="Somar" onPress={somarNumeros} />
